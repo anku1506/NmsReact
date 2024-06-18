@@ -1,0 +1,14 @@
+📌 Dev dependency- save using -D  - use for development not push on production.
+
+📌Npm- A package manager
+#caret(^) and tilde(~) sign in dependency suggest that caret - Compatible with version, i.e., accept new minor and patch version
+
+~-Approximately equivalent to version, i.e., only accept new patch version
+
+📌we should never put Package.json and package.lock.json in gitignore file.it should be availble on github so we can reinstall nodemodule with required packag.
+
+📌Used parcel as a bundler- npm i parcel and then used npx parcel index.html- npx is to execute package
+
+📌CDN- Content delivery network
+
+📌 Hot Module Replacement (HMR) is a feature that enables real-time updates to modules in a running application without requiring a full page reload.

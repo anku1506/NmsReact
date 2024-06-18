@@ -1,6 +1,10 @@
+import React from "react";
+import ReactDOM from 'react-dom/client'
+
+
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I am a h1 tag"),
+    React.createElement("h1", {}, "I am a Namestey React  h1 tag 📌"),
     React.createElement("h2", {}, "I am a h2 tag")
   ]),
 
@@ -10,24 +14,5 @@ const parent = React.createElement("div", { id: "parent" }, [
     
   ]),
 ]);
-
-// if we want to create another h1 or h2 inside same levael we have to use Array of children[], explain below.
-// const parent = React.createElement(
-//     "div",
-//     { id: "parent" },
-//     React.createElement(
-//       "div",
-//       { id: "child" },
-//      [React.createElement("h1", {}, "I am a h1 tag"),React.createElement("h2", {}, "I am a h2 tag")]  // inside array 
-//     )
-//   );
-
-// const heading = React.createElement(
-//   "h1",
-//   { id: "heading" },
-//   "Hello world from react!"
-// );
-console.log( parent);
-console.log(typeof (parent));
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(parent);
